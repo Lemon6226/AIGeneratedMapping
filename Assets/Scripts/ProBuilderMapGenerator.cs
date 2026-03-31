@@ -304,7 +304,7 @@ public class ProBuilderMapGenerator : MonoBehaviour
 
         // Přiřadíme materiál s barvou (výchozí je bílá)
         var mr  = wall.GetComponent<MeshRenderer>();
-        var mat = new Material(Shader.Find("Standard"));
+        var mat = new Material(Shader.Find("Universal Render Pipeline/Lit"));
         mat.color          = color ?? Color.white;
         mr.sharedMaterial  = mat;
         mr.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
